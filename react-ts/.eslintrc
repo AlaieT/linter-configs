@@ -1,0 +1,78 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.browser.json"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    // General ESlint rules
+    "no-console": "warn",
+    "no-undefined-vars": "warn",
+
+    // React-specific rules
+    "react/destructuring-assignment": [1, "always"],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/hook-use-state": [1, { "allowDestructuredState": true }],
+    "react/iframe-missing-sandbox": 1,
+    "react/jsx-handler-names": [
+      1,
+      {
+        "eventHandlerPrefix": "handle",
+        "eventHandlerPropPrefix": "on"
+      }
+    ],
+    "react/jsx-no-constructed-context-values": 2,
+    "react/jsx-no-leaked-render": [
+      2,
+      { "validStrategies": ["ternary", "coerce"] }
+    ],
+    "react/jsx-props-no-spreading": [
+      2,
+      {
+        "html": "ignore",
+        "custom": "enforce",
+        "exceptions": []
+      }
+    ],
+    "react/no-array-index-key": 2,
+
+    // React Hooks rules
+    "react-hooks/rules-of-hooks": "error",
+
+    // JSX accessibility rules
+    "jsx-a11y/click-events-have-key-events": 1
+
+    // Typescript rules
+    
+    // Import rules
+  }
+}
