@@ -33,7 +33,7 @@
     "no-undefined-vars": "warn",
 
     // React-specific rules
-    "react/destructuring-assignment": [1, "always"],
+    "react/destructuring-assignment": ["warn", "always"],
     "react/function-component-definition": [
       2,
       {
@@ -41,38 +41,52 @@
         "unnamedComponents": "arrow-function"
       }
     ],
-    "react/hook-use-state": [1, { "allowDestructuredState": true }],
-    "react/iframe-missing-sandbox": 1,
+    "react/hook-use-state": ["warn", { "allowDestructuredState": true }],
+    "react/iframe-missing-sandbox": "warn",
     "react/jsx-handler-names": [
-      1,
+      "warn",
       {
         "eventHandlerPrefix": "handle",
         "eventHandlerPropPrefix": "on"
       }
     ],
-    "react/jsx-no-constructed-context-values": 2,
+    "react/jsx-no-constructed-context-values": "error",
     "react/jsx-no-leaked-render": [
-      2,
+      "error",
       { "validStrategies": ["ternary", "coerce"] }
     ],
     "react/jsx-props-no-spreading": [
-      2,
+      "error",
       {
         "html": "ignore",
         "custom": "enforce",
         "exceptions": []
       }
     ],
-    "react/no-array-index-key": 2,
+    "react/no-array-index-key": "error",
 
     // React Hooks rules
     "react-hooks/rules-of-hooks": "error",
 
     // JSX accessibility rules
-    "jsx-a11y/click-events-have-key-events": 1
+    "jsx-a11y/click-events-have-key-events": "warn",
 
     // Typescript rules
-    
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/mo-explicit-any": "off",
+
     // Import rules
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "siblings", "index"]
+        ],
+        "newlines-between": "always"
+      }
+    ]
   }
 }
