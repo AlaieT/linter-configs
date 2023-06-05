@@ -11,6 +11,11 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.8",
+    "stylelint": "^15.6.3",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.0.0",
     "typescript": "^5.0.4"
   }
 }
