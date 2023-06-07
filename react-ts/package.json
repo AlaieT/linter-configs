@@ -2,6 +2,7 @@
   "name": "react-ts-linter-configs",
   "version": "1.0.0",
   "devDependencies": {
+    "typescript": "^5.0.4",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
     "eslint": "^8.13.0",
@@ -14,8 +15,6 @@
     "stylelint": "^15.6.3",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
-    "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^5.0.0",
-    "typescript": "^5.0.4"
+    "stylelint-config-clean-order":"^5.0.1"
   }
 }

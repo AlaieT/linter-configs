@@ -1,4 +1,5 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es6": true
@@ -18,7 +19,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "project": "./tsconfig.browser.json"
+    "project": ["./tsconfig.browser.json"]
   },
   "plugins": [
     "@typescript-eslint",
@@ -30,7 +31,7 @@
   "rules": {
     // General ESlint rules
     "no-console": "warn",
-    "no-undefined-vars": "warn",
+    "no-undef": "warn",
 
     // React-specific rules
     "react/destructuring-assignment": ["warn", "always"],
@@ -76,14 +77,16 @@
     "@typescript-eslint/mo-explicit-any": "off",
 
     // Import rules
+    "import/no-unresolved": "off",
     "import/order": [
       "error",
       {
         "groups": [
           "builtin",
           "external",
-          "internal",
-          ["parent", "siblings", "index"]
+          ["internal", "parent", "sibling", "index"],
+          "type",
+          "object"
         ],
         "newlines-between": "always"
       }
