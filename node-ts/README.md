@@ -1,4 +1,4 @@
-# react-ts
+# nodes-ts
 
 Linter configs for typescripts + nodejs projects.
 
