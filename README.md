@@ -5,7 +5,8 @@
 This project contains simple custom configuration files for [ESlint](https://eslint.org/), [Prettier](https://prettier.io/) and [Stylelint](https://stylelint.io/) for various types of projects. These configurations are designed to enforce consistent code style and formatting across your code.
 
 ## Available configs
-- [React-TypeScript](/react-ts/): standard type of front-end projects using react and typescript.
+- [React-TypeScript](/react-ts/): fro using in standard type of front-end projects using react and typescript.
+- [Node-TypeScript](/node-ts/): for using in general nodejs projects.
 
 ## Contributing
 Contributions to linter-configs are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
